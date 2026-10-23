@@ -1,0 +1,38 @@
+name: Bug report
+description: Something went wrong with UltraRig (installer, firmware or the control page)
+title: "Bug: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        If the problem is in the control page, use **Settings > Pedal > Copy diagnostics** and paste the result below.
+        **Never attach your backup folder or any `.bin` file.**
+  - type: input
+    id: version
+    attributes:
+      label: UltraRig version
+      description: Shown in the control page's top bar (for example "UltraRig M5.10"), or the name of the zip you installed.
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened, and what did you expect?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: How to make it happen again
+      description: The steps, the preset or effects you had, whether a guitar was playing.
+    validations:
+      required: false
+  - type: textarea
+    id: diagnostics
+    attributes:
+      label: Diagnostics
+      description: Paste "Copy diagnostics" from the control page, or attach the installer log (`tankg_install_*.json` in Documents\tankg_installer).
+      render: text
+    validations:
+      required: false
