@@ -13,6 +13,7 @@ Before installing anything, run the **UltraRig Check** on your pedal. It is **re
 except erasing or writing the pedal's memory, so it cannot change, damage or "brick" the pedal. It takes about 30 seconds.
 
 **You need:** a Tank-G **v2** with the factory firmware 96 or 97 (not the original Tank-G v1), Windows 10 or 11, and a USB **data** cable.
+Connect the pedal directly to the computer (no hub), close M-EFCS, and unplug any other USB MIDI or USB audio device.
 
 1. Download `UltraRig-check1-win.zip` from the [latest release](../../releases) and unzip it.
 2. Read `README-CHECK.txt` inside (2 minutes), then double-click `UltraRig-Check.exe`.
