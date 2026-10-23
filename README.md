@@ -19,6 +19,12 @@ except erasing or writing the pedal's memory, so it cannot change, damage or "br
 3. At the end a window opens with the report selected: `UltraRig-check-<date>-<id>.json`.
 4. Send that **one file**: open a [Check report issue](../../issues/new?template=check-report.yml) and drag the file into it.
 
+**If the pedal does not restart by itself** after the check (it stays dark or silent, or Windows still shows a "WL82 UBOOT" drive):
+its memory was never written, so nothing is lost.
+1. Switch the pedal **off with its power switch**, wait 10 seconds, and switch it on again.
+2. If it still does not turn on: unplug the computer's cable, plug a **USB-C charger** into the pedal's USB port and switch it on again.
+   This resets the pedal and it starts normally. Then reconnect it to the computer.
+
 **Never send the `backup_<date>` folder** that the check also creates in `Documents\tankg_installer`: it is a full copy of your pedal's
 memory with data unique to your unit. Keep it safe; it is your way back to the factory state after installing UltraRig.
 
