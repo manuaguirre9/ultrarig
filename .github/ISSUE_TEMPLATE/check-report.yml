@@ -1,0 +1,35 @@
+name: Check report
+description: Send the report of UltraRig-Check (the read-only pre-install check)
+title: "Check report: "
+labels: ["check-report"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for running the check. Attach ONLY the report file `UltraRig-check-<date>-<id>.json`.
+        **Do not attach the `backup_<date>` folder or any `.bin` file**: they contain data unique to your pedal.
+  - type: textarea
+    id: report
+    attributes:
+      label: Report file
+      description: Drag `UltraRig-check-....json` here. If GitHub refuses the file, open it with Notepad and paste its whole contents here.
+    validations:
+      required: true
+  - type: dropdown
+    id: verdict
+    attributes:
+      label: What did the check say at the end (VERDICT)?
+      options:
+        - READY
+        - READY_WITH_WARNINGS
+        - NOT_READY
+        - It stopped with an error / I did not see a verdict
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Anything unusual?
+      description: For example a Windows message, the pedal not coming back on its own, an antivirus warning.
+    validations:
+      required: false
