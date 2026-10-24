@@ -3,7 +3,7 @@
 UltraRig is an alternative firmware for the **M-VAVE Tank-G v2** guitar multi-effects pedal: NAM (Neural Amp Modeler) A2-Lite captures,
 an editable effects chain, cabinet IRs, presets with snapshots, a tuner, and a control page that runs in your browser.
 
-> **Status: closed alpha.** We are checking, pedal by pedal, that the installation works before anyone installs it.
+> **Status: early alpha.** Expect bugs. Run the pre-install check first and install only if it says READY.
 > UltraRig is **not affiliated with or endorsed by M-VAVE / Cuvave / Sinco or JieLi**. "M-VAVE" and "Tank-G" are trademarks of their owners
 > and are used here only to name the compatible hardware.
 
@@ -34,10 +34,11 @@ its memory was never written, so nothing is lost.
 **Never send the `backup_<date>` folder** that the check also creates in `Documents\tankg_installer`: it is a full copy of your pedal's
 memory with data unique to your unit. Keep it safe; it is your way back to the factory state after installing UltraRig.
 
-## Step 2 (later): installation
+## Step 2: installation (only if your report says READY)
 
-When your report says the pedal is ready, you will get the installer. It makes a full backup first, writes only the application area of the
-pedal's memory, and can restore the factory firmware from that backup.
+The installer is in the [alpha 1 release](../../releases/tag/alpha1) (`UltraRig-alpha1-win.zip`, read `README.txt` inside). It makes a full
+backup first, writes only the application area of the pedal's memory, and can restore the factory firmware from that backup. It repeats
+the safety checks of the pre-install check and refuses any pedal other than a Tank-G v2 with factory firmware 96 or 97.
 
 ## What the check looks at
 
