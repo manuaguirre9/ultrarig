@@ -12,10 +12,14 @@ an editable effects chain, cabinet IRs, presets with snapshots, a tuner, and a c
 Before installing anything, run the **UltraRig Check** on your pedal. It is **read-only**: it goes through every step of the installer
 except erasing or writing the pedal's memory, so it cannot change, damage or "brick" the pedal. It takes about 30 seconds.
 
-**You need:** a Tank-G **v2** with the factory firmware 96 or 97 (not the original Tank-G v1), Windows 10 or 11, and a USB **data** cable.
+**Any Tank-G can run it.** UltraRig supports the Tank-G **v2** with factory firmware 96 or 97 for now. On any other pedal (a Tank-G v1,
+an older firmware...) the check does not enter the bootloader and does not read the memory: it only records what Windows knows about the
+pedal (verdict NOT_SUPPORTED). Please send that report too: it helps us add support for more pedals.
+
+**You need:** a Tank-G, Windows 10 or 11, and a USB **data** cable.
 Connect the pedal directly to the computer (no hub), close M-EFCS, and unplug any other USB MIDI or USB audio device.
 
-1. Download `UltraRig-check1.1-win.zip` from the [check release](../../releases/tag/check1) and unzip it. Keep the unzipped folder together:
+1. Download `UltraRig-check1.2-win.zip` from the [check release](../../releases/tag/check1) and unzip it. Keep the unzipped folder together:
    `UltraRig-Check.exe` needs the `_internal` folder next to it.
 2. Read `README-CHECK.txt` inside (2 minutes), then double-click `UltraRig-Check.exe`.
 3. At the end a window opens with the report selected: `UltraRig-check-<date>-<id>.json`.
