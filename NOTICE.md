@@ -11,7 +11,7 @@ UltraRig se distribuye **solo como un paquete de binarios**; el código fuente n
 
 | Archivo | Qué es |
 |---|---|
-| `UltraRig-Installer.exe` | el instalador para Windows (un programa en Python empaquetado con PyInstaller; lleva adentro el intérprete de Python, jl-uboot-tool, `wl82loader.bin` y un pequeño programa propio de reinicio para el pedal) |
+| `UltraRig-Installer.exe` | el instalador para Windows (un programa en Python empaquetado con PyInstaller como carpeta: el .exe y su carpeta `_internal`, que lleva el intérprete de Python, jl-uboot-tool, `wl82loader.bin` y un pequeño programa propio de reinicio para el pedal) |
 | `UltraRig-Check.exe` | el chequeo previo de solo lectura (mismo programa que el instalador, limitado a leer: nunca borra ni escribe la memoria del pedal); se distribuye en un paquete aparte con `README-CHECK.txt` |
 | `<nombre>_app.bin` y `<nombre>_app.json` | la imagen del área de aplicación del firmware (487.424 B) y su descripción (versión, huella SHA-256) |
 | `web/` | la web de control (`tankg.html`, `nam2chip.js` e `index.html`), para abrir localmente en Chrome o Edge |

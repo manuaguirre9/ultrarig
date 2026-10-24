@@ -15,7 +15,8 @@ except erasing or writing the pedal's memory, so it cannot change, damage or "br
 **You need:** a Tank-G **v2** with the factory firmware 96 or 97 (not the original Tank-G v1), Windows 10 or 11, and a USB **data** cable.
 Connect the pedal directly to the computer (no hub), close M-EFCS, and unplug any other USB MIDI or USB audio device.
 
-1. Download `UltraRig-check1-win.zip` from the [latest release](../../releases) and unzip it.
+1. Download `UltraRig-check1.1-win.zip` from the [check release](../../releases/tag/check1) and unzip it. Keep the unzipped folder together:
+   `UltraRig-Check.exe` needs the `_internal` folder next to it.
 2. Read `README-CHECK.txt` inside (2 minutes), then double-click `UltraRig-Check.exe`.
 3. At the end a window opens with the report selected: `UltraRig-check-<date>-<id>.json`.
 4. Send that **one file**: open a [Check report issue](../../issues/new?template=check-report.yml) and drag the file into it.
