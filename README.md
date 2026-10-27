@@ -7,6 +7,8 @@ an editable effects chain, cabinet IRs, presets with snapshots, a tuner, and a c
 > UltraRig is **not affiliated with or endorsed by M-VAVE / Cuvave / Sinco or JieLi**. "M-VAVE" and "Tank-G" are trademarks of their owners
 > and are used here only to name the compatible hardware.
 
+**Website and release news:** [ultrarig.app](https://ultrarig.app). Leave your email there to get a note when a new version is out.
+
 ## Step 1 (now): the pre-install check
 
 Before installing anything, run the **UltraRig Check** on your pedal. It is **read-only**: it goes through every step of the installer
