@@ -1,0 +1,48 @@
+# Emails everyone on the ultrarig.app list when a release is published.
+# Skip a release by writing [no-email] anywhere in its notes.
+# Drafts send nothing; publishing the draft is what sends.
+name: Release email
+
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: Release tag to announce
+        required: true
+      test_to:
+        description: Send only to this address (leave empty to send to the whole list)
+        required: false
+      force:
+        description: Send again even if this tag was already announced
+        type: boolean
+        default: false
+
+jobs:
+  email:
+    if: github.event_name == 'workflow_dispatch' || !contains(github.event.release.body, '[no-email]')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send
+        env:
+          SECRET: ${{ secrets.ULTRARIG_NOTIFY_SECRET }}
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ github.event.release.tag_name || inputs.tag }}
+          TEST_TO: ${{ inputs.test_to }}
+          FORCE: ${{ inputs.force || false }}
+        run: |
+          set -euo pipefail
+          rel=$(gh api "repos/${GITHUB_REPOSITORY}/releases/tags/${TAG}")
+          payload=$(jq -n --argjson r "$rel" --arg test_to "$TEST_TO" --argjson force "$FORCE" \
+            '{tag: $r.tag_name, name: $r.name, url: $r.html_url, body: ($r.body // ""), force: $force}
+             + (if $test_to != "" then {test_to: $test_to} else {} end)')
+          res=$(curl -sS -w '\n%{http_code}' -X POST \
+            "https://ovftdiikshwnvhwfynkz.supabase.co/functions/v1/notify-release" \
+            -H "Content-Type: application/json" -H "x-notify-secret: ${SECRET}" -d "$payload")
+          code=$(tail -n1 <<< "$res"); body=$(sed '$d' <<< "$res")
+          echo "$body"
+          echo "### Release email" >> "$GITHUB_STEP_SUMMARY"
+          echo '```json' >> "$GITHUB_STEP_SUMMARY"; echo "$body" >> "$GITHUB_STEP_SUMMARY"; echo '```' >> "$GITHUB_STEP_SUMMARY"
+          test "$code" = "200"
+          jq -e '.failed | length == 0' <<< "$body" > /dev/null
