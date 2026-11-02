@@ -1,53 +1,61 @@
-# UltraRig for M-VAVE Tank-G v2
+# UltraRig for the M-VAVE Tank-G v1 and v2
 
-UltraRig is an alternative firmware for the **M-VAVE Tank-G v2** guitar multi-effects pedal: NAM (Neural Amp Modeler) A2-Lite captures,
-an editable effects chain, cabinet IRs, presets with snapshots, a tuner, and a control page that runs in your browser.
+UltraRig is an alternative firmware for the **M-VAVE Tank-G v1 and v2** guitar multi-effects pedals: NAM (Neural Amp Modeler) A2-Lite
+amp captures, an editable effects chain with parallel branches, cabinet IRs, 32 presets with 4 scenes each, a tuner, and a control page
+that runs in your browser, plus an optional Android app over Bluetooth. Out of the box the footswitches work like the factory firmware
+(8 banks of 4 presets, a Live mode for the effects and the knobs), or you can give each one your own actions.
 
-> **Status: early alpha.** Expect bugs. Run the pre-install check first and install only if it says READY.
+> **Status: public alpha.** Expect bugs, and don't rely on it for a gig yet. Keep the backup the installer makes.
 > UltraRig is **not affiliated with or endorsed by M-VAVE / Cuvave / Sinco or JieLi**. "M-VAVE" and "Tank-G" are trademarks of their owners
 > and are used here only to name the compatible hardware.
 
 **Website and release news:** [ultrarig.app](https://ultrarig.app). Leave your email there to get a note when a new version is out.
 
-## Step 1 (now): the pre-install check
+## Download
 
-Before installing anything, run the **UltraRig Check** on your pedal. It is **read-only**: it goes through every step of the installer
-except erasing or writing the pedal's memory, so it cannot change, damage or "brick" the pedal. It takes about 30 seconds.
+Every version is in [Releases](../../releases/latest). Pick the file for your pedal:
 
-**Any Tank-G can run it.** UltraRig supports the Tank-G **v2** with factory firmware 96 or 97 for now. On any other pedal (a Tank-G v1,
-an older firmware...) the check does not enter the bootloader and does not read the memory: it only records what Windows knows about the
-pedal (verdict NOT_SUPPORTED). Please send that report too: it helps us add support for more pedals.
+| File | For |
+|---|---|
+| `UltraRig-<version>-v2-win.zip` | Tank-G **v2**: the installer and the control page, for Windows |
+| `UltraRig-<version>-v1-win.zip` | Tank-G **v1**: the same, for the v1 |
+| `UltraRig-<version>-android.apk` | Optional: the Android app |
 
-**You need:** a Tank-G, Windows 10 or 11, and a USB **data** cable.
-Connect the pedal directly to the computer (no hub), close M-EFCS, and unplug any other USB MIDI or USB audio device.
+Not sure which one you have? The installer tells you, and it refuses a package made for the other board.
 
-1. Download `UltraRig-check1.2-win.zip` from the [check release](../../releases/tag/check1) and unzip it. Keep the unzipped folder together:
-   `UltraRig-Check.exe` needs the `_internal` folder next to it.
-2. Read `README-CHECK.txt` inside (2 minutes), then double-click `UltraRig-Check.exe`.
-3. At the end a window opens with the report selected: `UltraRig-check-<date>-<id>.json`.
-4. Send that **one file**: open a [Check report issue](../../issues/new?template=check-report.yml) and drag the file into it.
+## Before you install
 
-**If the pedal does not restart by itself** after the check (it stays dark or silent, or Windows still shows a "WL82 UBOOT" drive):
-its memory was never written, so nothing is lost.
-1. Switch the pedal **off with its power switch**, wait 10 seconds, and switch it on again.
-2. If it still does not turn on: unplug the computer's cable, plug a **USB-C charger** into the pedal's USB port and switch it on again.
-   This resets the pedal and it starts normally. Then reconnect it to the computer.
+- **Factory firmware 97 or 98.** On 96, 53 or older, update first with M-VAVE's M-UPGRADE from [m-vave.com/download](https://m-vave.com/download)
+  (it installs 98). That update puts the factory presets, amps and cabs back, so save your own with M-EFCS first. Newer than 98 is not
+  tested, and rebrands (Lekato, Playwell, Yuimer, NMD) haven't been tested either.
+- Windows 10 or 11 to install, Chrome or Edge for the control page, and a USB **data** cable plugged straight into the computer (no hub).
+- The installer checks your pedal before writing anything and, if it isn't supported, stops without changing anything.
 
-**Never send the `backup_<date>` folder** that the check also creates in `Documents\tankg_installer`: it is a full copy of your pedal's
-memory with data unique to your unit. Keep it safe; it is your way back to the factory state after installing UltraRig.
+## Install
 
-## Step 2: installation (only if your report says READY)
+1. Unzip the package for your pedal and read `README.txt` inside. Keep all its files together.
+2. Connect the pedal, switch it on, close M-EFCS and M-UPGRADE, and unplug other USB MIDI or audio devices.
+3. Run `UltraRig-Installer.exe` (on the v1, as administrator) and click "Install UltraRig". If Windows asks to format a disk, click
+   **Cancel**: that disk is the pedal.
+4. It backs up the whole pedal first, then writes UltraRig and restarts the pedal. Don't unplug or switch off the pedal until the window
+   says it's installed.
+5. Open `web\index.html` from the package in Chrome or Edge and click "Connect", or use the Android app.
 
-The installer is in the [alpha 1 release](../../releases/tag/alpha1) (`UltraRig-alpha1-win.zip`, read `README.txt` inside). It makes a full
-backup first, writes only the application area of the pedal's memory, and can restore the factory firmware from that backup. It repeats
-the safety checks of the pre-install check and refuses any pedal other than a Tank-G v2 with factory firmware 96 or 97.
+Updating from an older UltraRig is the same installer: click "Update UltraRig". Your presets, captures and IRs are kept.
 
-## What the check looks at
+**Your backup** is in `Documents\tankg_installer\backup_<date>`. It is the only way back to the factory firmware (installer: "Go back to
+the factory firmware"). Copy it somewhere safe and **never share it**: it holds data unique to your unit. Error reports never include it.
 
-The pedal's identity and firmware version, the USB connection (direct port vs. hub), entering the chip's built-in bootloader, reading the
-whole memory twice (the two reads must match), the boot loader and factory firmware against known fingerprints, a simulation of the install
-on your own pedal's memory (which areas would be written), and the return to the factory firmware. The report contains the results and
-timings, your Windows version and a short ID derived from the pedal's serial number. It contains no memory dump and no personal files or paths.
+## Pedal check (optional)
+
+Want to know first whether your pedal is supported? The [UltraRig Check](../../releases/tag/check1) only reads the pedal and never writes
+anything. Unzip it, read `README-CHECK.txt`, run `UltraRig-Check.exe` and, if you like, send the report file through a
+[Check report issue](../../issues/new?template=check-report.yml).
+
+## Bugs and ideas
+
+Use "Send report to the developer…" on the control page, or [open an issue](../../issues) with the output of "Copy diagnostics".
+Pedal requests are welcome too.
 
 ## License
 
