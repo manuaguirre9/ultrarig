@@ -5,7 +5,7 @@ amp captures, an editable effects chain with parallel branches, cabinet IRs, 32 
 that runs in your browser, plus an optional Android app over Bluetooth. Out of the box the footswitches work like the factory firmware
 (8 banks of 4 presets, a Live mode for the effects and the knobs), or you can give each one your own actions.
 
-> **Status: public alpha.** Expect bugs, and don't rely on it for a gig yet. Keep the backup the installer makes.
+> **Status: public alpha.** Expect bugs, and keep the backup the installer makes.
 > UltraRig is **not affiliated with or endorsed by M-VAVE / Cuvave / Sinco or JieLi**. "M-VAVE" and "Tank-G" are trademarks of their owners
 > and are used here only to name the compatible hardware.
 
