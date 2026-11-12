@@ -18,6 +18,11 @@ on:
         description: Send again even if this tag was already announced
         type: boolean
         default: false
+      mode:
+        description: "send (default), dry_run (show what the list sync would do, send nothing) or setup (create the Resend segment once)"
+        type: choice
+        options: [send, dry_run, setup]
+        default: send
 
 jobs:
   email:
@@ -31,12 +36,15 @@ jobs:
           TAG: ${{ github.event.release.tag_name || inputs.tag }}
           TEST_TO: ${{ inputs.test_to }}
           FORCE: ${{ inputs.force || false }}
+          MODE: ${{ inputs.mode || 'send' }}
         run: |
           set -euo pipefail
           rel=$(gh api "repos/${GITHUB_REPOSITORY}/releases/tags/${TAG}")
           payload=$(jq -n --argjson r "$rel" --arg test_to "$TEST_TO" --argjson force "$FORCE" \
             '{tag: $r.tag_name, name: $r.name, url: $r.html_url, body: ($r.body // ""), force: $force}
              + (if $test_to != "" then {test_to: $test_to} else {} end)')
+          if [ "$MODE" = "dry_run" ]; then payload=$(jq '. + {dry_run: true}' <<< "$payload"); fi
+          if [ "$MODE" = "setup" ]; then payload='{"setup": true}'; fi
           res=$(curl -sS -w '\n%{http_code}' -X POST \
             "https://ovftdiikshwnvhwfynkz.supabase.co/functions/v1/notify-release" \
             -H "Content-Type: application/json" -H "x-notify-secret: ${SECRET}" -d "$payload")
@@ -45,4 +53,4 @@ jobs:
           echo "### Release email" >> "$GITHUB_STEP_SUMMARY"
           echo '```json' >> "$GITHUB_STEP_SUMMARY"; echo "$body" >> "$GITHUB_STEP_SUMMARY"; echo '```' >> "$GITHUB_STEP_SUMMARY"
           test "$code" = "200"
-          jq -e '.failed | length == 0' <<< "$body" > /dev/null
+          if [ "$MODE" = "send" ]; then jq -e '(.failed // []) | length == 0' <<< "$body" > /dev/null; fi
