@@ -39,7 +39,9 @@ jobs:
           MODE: ${{ inputs.mode || 'send' }}
         run: |
           set -euo pipefail
-          if [ "$MODE" = "news" ]; then
+          if [ "$MODE" = "status" ]; then
+            payload=$(jq -n --arg tag "$TAG" '{tag: $tag, status: true}')
+          elif [ "$MODE" = "news" ]; then
             payload=$(jq -n --arg tag "$TAG" --arg test_to "$TEST_TO" --argjson force "$FORCE"               '{tag: $tag, news: true, force: $force} + (if $test_to != "" then {test_to: $test_to} else {} end)')
           else
           rel=$(gh api "repos/${GITHUB_REPOSITORY}/releases/tags/${TAG}")
