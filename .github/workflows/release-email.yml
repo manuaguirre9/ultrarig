@@ -19,9 +19,9 @@ on:
         type: boolean
         default: false
       mode:
-        description: "send (default), dry_run (show what the list sync would do, send nothing) or setup (create the Resend segment once)"
+        description: "send (default), dry_run (show what the list sync would do, send nothing), setup (create the Resend segment once) or status (how each mail of this tag ended, sends nothing)"
         type: choice
-        options: [send, dry_run, setup]
+        options: [send, dry_run, setup, status]
         default: send
 
 jobs:
@@ -45,6 +45,7 @@ jobs:
              + (if $test_to != "" then {test_to: $test_to} else {} end)')
           if [ "$MODE" = "dry_run" ]; then payload=$(jq '. + {dry_run: true}' <<< "$payload"); fi
           if [ "$MODE" = "setup" ]; then payload='{"setup": true}'; fi
+          if [ "$MODE" = "status" ]; then payload=$(jq -n --arg tag "$TAG" '{tag: $tag, status: true}'); fi
           res=$(curl -sS -w '\n%{http_code}' -X POST \
             "https://ovftdiikshwnvhwfynkz.supabase.co/functions/v1/notify-release" \
             -H "Content-Type: application/json" -H "x-notify-secret: ${SECRET}" -d "$payload")
