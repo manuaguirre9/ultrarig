@@ -9,7 +9,7 @@ on:
   workflow_dispatch:
     inputs:
       tag:
-        description: Release tag to announce
+        description: Release tag to announce (or the news tag, with mode news)
         required: true
       test_to:
         description: Send only to this address (leave empty to send to the whole list)
@@ -19,9 +19,9 @@ on:
         type: boolean
         default: false
       mode:
-        description: "send (default), dry_run (show what the list sync would do, send nothing), setup (create the Resend segment once), status (how each mail of this tag ended, sends nothing) or catch_up (send this tag only to people who signed up after it went out)"
+        description: "send (default), dry_run (show what the list sync would do, send nothing), setup (create the Resend segment once), status (how each mail of this tag ended, sends nothing), catch_up (send this tag only to people who signed up after it went out) or news (the newsletter saved under this tag, test_to first)"
         type: choice
-        options: [send, dry_run, setup, status, catch_up]
+        options: [send, dry_run, setup, status, catch_up, news]
         default: send
 
 jobs:
@@ -39,6 +39,9 @@ jobs:
           MODE: ${{ inputs.mode || 'send' }}
         run: |
           set -euo pipefail
+          if [ "$MODE" = "news" ]; then
+            payload=$(jq -n --arg tag "$TAG" --arg test_to "$TEST_TO" --argjson force "$FORCE"               '{tag: $tag, news: true, force: $force} + (if $test_to != "" then {test_to: $test_to} else {} end)')
+          else
           rel=$(gh api "repos/${GITHUB_REPOSITORY}/releases/tags/${TAG}")
           payload=$(jq -n --argjson r "$rel" --arg test_to "$TEST_TO" --argjson force "$FORCE" \
             '{tag: $r.tag_name, name: $r.name, url: $r.html_url, body: ($r.body // ""), force: $force}
@@ -47,6 +50,7 @@ jobs:
           if [ "$MODE" = "setup" ]; then payload='{"setup": true}'; fi
           if [ "$MODE" = "status" ]; then payload=$(jq -n --arg tag "$TAG" '{tag: $tag, status: true}'); fi
           if [ "$MODE" = "catch_up" ]; then payload=$(jq '. + {catch_up: true}' <<< "$payload"); fi
+          fi
           res=$(curl -sS -w '\n%{http_code}' -X POST \
             "https://ovftdiikshwnvhwfynkz.supabase.co/functions/v1/notify-release" \
             -H "Content-Type: application/json" -H "x-notify-secret: ${SECRET}" -d "$payload")
@@ -55,4 +59,4 @@ jobs:
           echo "### Release email" >> "$GITHUB_STEP_SUMMARY"
           echo '```json' >> "$GITHUB_STEP_SUMMARY"; echo "$body" >> "$GITHUB_STEP_SUMMARY"; echo '```' >> "$GITHUB_STEP_SUMMARY"
           test "$code" = "200"
-          if [ "$MODE" = "send" ] || [ "$MODE" = "catch_up" ]; then jq -e '(.failed // []) | length == 0' <<< "$body" > /dev/null; fi
+          if [ "$MODE" = "send" ] || [ "$MODE" = "catch_up" ] || [ "$MODE" = "news" ]; then jq -e '(.failed // []) | length == 0' <<< "$body" > /dev/null; fi
