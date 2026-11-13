@@ -19,9 +19,9 @@ on:
         type: boolean
         default: false
       mode:
-        description: "send (default), dry_run (show what the list sync would do, send nothing), setup (create the Resend segment once) or status (how each mail of this tag ended, sends nothing)"
+        description: "send (default), dry_run (show what the list sync would do, send nothing), setup (create the Resend segment once), status (how each mail of this tag ended, sends nothing) or catch_up (send this tag only to people who signed up after it went out)"
         type: choice
-        options: [send, dry_run, setup, status]
+        options: [send, dry_run, setup, status, catch_up]
         default: send
 
 jobs:
@@ -46,6 +46,7 @@ jobs:
           if [ "$MODE" = "dry_run" ]; then payload=$(jq '. + {dry_run: true}' <<< "$payload"); fi
           if [ "$MODE" = "setup" ]; then payload='{"setup": true}'; fi
           if [ "$MODE" = "status" ]; then payload=$(jq -n --arg tag "$TAG" '{tag: $tag, status: true}'); fi
+          if [ "$MODE" = "catch_up" ]; then payload=$(jq '. + {catch_up: true}' <<< "$payload"); fi
           res=$(curl -sS -w '\n%{http_code}' -X POST \
             "https://ovftdiikshwnvhwfynkz.supabase.co/functions/v1/notify-release" \
             -H "Content-Type: application/json" -H "x-notify-secret: ${SECRET}" -d "$payload")
@@ -54,4 +55,4 @@ jobs:
           echo "### Release email" >> "$GITHUB_STEP_SUMMARY"
           echo '```json' >> "$GITHUB_STEP_SUMMARY"; echo "$body" >> "$GITHUB_STEP_SUMMARY"; echo '```' >> "$GITHUB_STEP_SUMMARY"
           test "$code" = "200"
-          if [ "$MODE" = "send" ]; then jq -e '(.failed // []) | length == 0' <<< "$body" > /dev/null; fi
+          if [ "$MODE" = "send" ] || [ "$MODE" = "catch_up" ]; then jq -e '(.failed // []) | length == 0' <<< "$body" > /dev/null; fi
