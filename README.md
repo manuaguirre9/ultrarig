@@ -11,6 +11,9 @@ that runs in your browser, plus an optional Android app over Bluetooth. Out of t
 
 **Website and release news:** [ultrarig.app](https://ultrarig.app). Leave your email there to get a note when a new version is out.
 
+**Guides & Documentation:**
+- [Expression Pedal Calibration & Dynamic Control](docs/EXPRESSION-CALIBRATION.md): TRS wiring, calibration, deadzones, and wah/volume/whammy modulation.
+
 ## Download
 
 Every version is in [Releases](../../releases/latest). Pick the file for your pedal:
