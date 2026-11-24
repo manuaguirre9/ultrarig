@@ -1,0 +1,67 @@
+name: Audio & DSP issue report
+description: Report sound anomalies, volume drops, audio dropouts, or DSP glitches
+title: "Audio: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form to report audio, DSP, or tone anomalies in UltraRig.
+        **Do not attach your `backup_<date>` folder or any `.bin` file.**
+  - type: input
+    id: pedal_version
+    attributes:
+      label: UltraRig version and Pedal Model
+      description: e.g. "Alpha 13.1 on Tank-G v2" or "Alpha 13.1-blackbox"
+      placeholder: "e.g. UltraRig Alpha 13.1, Tank-G v2"
+    validations:
+      required: true
+  - type: dropdown
+    id: anomaly_type
+    attributes:
+      label: Type of audio anomaly
+      options:
+        - "Volume drop or unexpected level boost (e.g. engaging Chorus lowers volume)"
+        - "Audio stutter / micro-dropout / DSP budget exhaustion"
+        - "Digital clipping / harsh inter-sample distortion"
+        - "Audio pop or artifact during scene or preset switching"
+        - "Chromatic tuner silence or memory conflict"
+        - "Phase cancellation or comb-filtering in parallel routing"
+        - "Noise gate chatter or unnatural decay cut"
+        - "Other"
+    validations:
+      required: true
+  - type: dropdown
+    id: monitoring_output
+    attributes:
+      label: How are you monitoring the pedal output?
+      options:
+        - "Headphones (3.5mm jack on the pedal)"
+        - "1/4\" Out to clean guitar/bass amplifier (effects return or front)"
+        - "Balanced output (XLR) direct to audio interface or PA mixer"
+        - "USB Audio directly recorded into DAW"
+    validations:
+      required: true
+  - type: textarea
+    id: signal_chain
+    attributes:
+      label: Active signal chain & preset blocks
+      description: List the active blocks in the preset where the issue occurs (e.g. Gate -> NAM Preamp -> Chorus -> Delay -> IR).
+      placeholder: "e.g. Compressor (on) -> NAM capture (Plexi A2-Lite) -> Parallel Split: Path A Delay, Path B Reverb -> Merge -> 1024-pt IR"
+    validations:
+      required: true
+  - type: textarea
+    id: description_steps
+    attributes:
+      label: What happens, and how to reproduce it?
+      description: Describe the sound, guitar pickup type (single-coil/humbucker), and steps to trigger it.
+    validations:
+      required: true
+  - type: textarea
+    id: diagnostics
+    attributes:
+      label: Diagnostics output
+      description: Paste the output of **Settings > Pedal > Copy diagnostics** from the UltraRig Web Editor.
+      render: text
+    validations:
+      required: false

@@ -55,6 +55,7 @@ anything. Unzip it, read `README-CHECK.txt`, run `UltraRig-Check.exe` and, if yo
 ## Bugs and ideas
 
 Use "Send report to the developer…" on the control page, or [open an issue](../../issues) with the output of "Copy diagnostics".
+For sound anomalies, volume drops, or DSP glitches, use the [Audio & DSP report](../../issues/new?template=audio-report.yml).
 Pedal requests are welcome too.
 
 ## License
