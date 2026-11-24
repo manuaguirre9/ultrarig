@@ -11,6 +11,9 @@ that runs in your browser, plus an optional Android app over Bluetooth. Out of t
 
 **Website and release news:** [ultrarig.app](https://ultrarig.app). Leave your email there to get a note when a new version is out.
 
+**Guides & Documentation:**
+- [Backup, Preset Export & Recovery Guide](docs/BACKUP-RESTORATION.md): Hardware flash backups, 32-preset library exports, and safe firmware upgrade procedures.
+
 ## Download
 
 Every version is in [Releases](../../releases/latest). Pick the file for your pedal:
