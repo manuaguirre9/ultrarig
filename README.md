@@ -57,6 +57,10 @@ anything. Unzip it, read `README-CHECK.txt`, run `UltraRig-Check.exe` and, if yo
 Use "Send report to the developer…" on the control page, or [open an issue](../../issues) with the output of "Copy diagnostics".
 Pedal requests are welcome too.
 
+## Guides & Documentation
+
+- [Stereo Routing & Ping-Pong Spatial Effects](docs/STEREO-ROUTING-GUIDE.md): 3.5mm TRS stereo breakouts, dual IR panning, ping-pong delay, IEM integration, and mono-summing phase cancellation prevention.
+
 ## License
 
 UltraRig is free for **personal, non-commercial use** under the [PolyForm Noncommercial License 1.0.0](LICENSE.md): you may not sell the
