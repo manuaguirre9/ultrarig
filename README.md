@@ -55,6 +55,7 @@ anything. Unzip it, read `README-CHECK.txt`, run `UltraRig-Check.exe` and, if yo
 ## Bugs and ideas
 
 Use "Send report to the developer…" on the control page, or [open an issue](../../issues) with the output of "Copy diagnostics".
+To suggest new features, workflow improvements, or editor enhancements, open a [Feature request](../../issues/new?template=feature-request.yml).
 Pedal requests are welcome too.
 
 ## License

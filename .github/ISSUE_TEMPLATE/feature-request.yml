@@ -1,0 +1,55 @@
+name: Feature request
+description: Suggest an idea or enhancement for UltraRig (editor, firmware, presets, or UI)
+title: "Feature: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for suggesting an improvement!
+        Please describe the problem you are trying to solve and how you envision the feature working.
+  - type: dropdown
+    id: component
+    attributes:
+      label: Which part of UltraRig does this feature apply to?
+      options:
+        - "UltraRig Editor (Web / Desktop App)"
+        - "Preset & Scene Management (Saving, Copy/Paste, Duplicating, Undo)"
+        - "Firmware DSP & Signal Chain (Amps, NAM, IRs, Effects, Routing)"
+        - "Hardware UI / Footswitch Actions / Pedal Screen"
+        - "MIDI / Bluetooth / External Controllers"
+        - "Installer / Backup Tool"
+        - "Other"
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem statement / Use case
+      description: What problem are you trying to solve? Or what scenario makes this feature necessary?
+      placeholder: "e.g. When performing live, I need to quickly duplicate a preset and change only the delay time, but currently..."
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed solution
+      description: Describe what you would like to happen and how it should look or feel.
+      placeholder: "e.g. Add a 'Duplicate' option in the preset menu that copies all blocks and scenes to the next free slot."
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives or workarounds considered
+      description: Have you tried other ways of doing this? Why weren't they ideal?
+      placeholder: "e.g. Manually recreating the preset from scratch in another slot..."
+    validations:
+      required: false
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context or mockups
+      description: Links, mockups, screenshots, or examples from other modelers or DAWs.
+    validations:
+      required: false
