@@ -11,6 +11,9 @@ that runs in your browser, plus an optional Android app over Bluetooth. Out of t
 
 **Website and release news:** [ultrarig.app](https://ultrarig.app). Leave your email there to get a note when a new version is out.
 
+**Guides & Documentation:**
+- [Physical Amplifier Channel Switching via MIDI](docs/MIDI-AMP-CHANNEL-SWITCHING.md): Controlling tube amp channels (Marshall, 5150, Mesa, ENGL) synchronized with scenes.
+
 ## Download
 
 Every version is in [Releases](../../releases/latest). Pick the file for your pedal:
