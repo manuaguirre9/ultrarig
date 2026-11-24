@@ -57,6 +57,10 @@ anything. Unzip it, read `README-CHECK.txt`, run `UltraRig-Check.exe` and, if yo
 Use "Send report to the developer…" on the control page, or [open an issue](../../issues) with the output of "Copy diagnostics".
 Pedal requests are welcome too.
 
+## Guides & Documentation
+
+- [Interface Scaling, Accessibility & Tablet Landscape](docs/UI-ZOOM-ACCESSIBILITY.md): UI zoom controls (75% to 150%), keyboard shortcuts, tablet landscape mode, and stage distance visibility.
+
 ## License
 
 UltraRig is free for **personal, non-commercial use** under the [PolyForm Noncommercial License 1.0.0](LICENSE.md): you may not sell the
