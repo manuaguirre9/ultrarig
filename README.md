@@ -57,6 +57,10 @@ anything. Unzip it, read `README-CHECK.txt`, run `UltraRig-Check.exe` and, if yo
 Use "Send report to the developer…" on the control page, or [open an issue](../../issues) with the output of "Copy diagnostics".
 Pedal requests are welcome too.
 
+## Guides & Documentation
+
+- [FET 1176 Ultra-Fast Compression & British Mode Guide](docs/FET-1176-COMPRESSION.md): JFET variable attenuation, 20-microsecond ultra-fast attack times, all-buttons-in British crush mode, and 1176+LA-2A serial stacking.
+
 ## License
 
 UltraRig is free for **personal, non-commercial use** under the [PolyForm Noncommercial License 1.0.0](LICENSE.md): you may not sell the
