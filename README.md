@@ -57,6 +57,10 @@ anything. Unzip it, read `README-CHECK.txt`, run `UltraRig-Check.exe` and, if yo
 Use "Send report to the developer…" on the control page, or [open an issue](../../issues) with the output of "Copy diagnostics".
 Pedal requests are welcome too.
 
+## Guides & Documentation
+
+- [Guitar & Bass Monophonic Synthesizer Routing](docs/GUITAR-SYNTH-ROUTING.md): Pure analog wave shaping (Saw/Square/Sub), resonant 24dB ladder filter, dynamic envelope follower growl, and hybrid guitar+synth rigs.
+
 ## License
 
 UltraRig is free for **personal, non-commercial use** under the [PolyForm Noncommercial License 1.0.0](LICENSE.md): you may not sell the
