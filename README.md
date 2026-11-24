@@ -57,6 +57,10 @@ anything. Unzip it, read `README-CHECK.txt`, run `UltraRig-Check.exe` and, if yo
 Use "Send report to the developer…" on the control page, or [open an issue](../../issues) with the output of "Copy diagnostics".
 Pedal requests are welcome too.
 
+## Guides & Documentation
+
+- [Expression Pedal Advanced Calibration & Mapping Guide](docs/EXPRESSION-CALIBRATION-ADVANCED.md): Optical vs. potentiometer sensors, TRS polarities, ADC jitter filtering, response curves (Linear/Log/Reverse-Log), and multi-parameter morphing.
+
 ## License
 
 UltraRig is free for **personal, non-commercial use** under the [PolyForm Noncommercial License 1.0.0](LICENSE.md): you may not sell the
