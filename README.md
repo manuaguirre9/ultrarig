@@ -1,6 +1,6 @@
-# UltraRig for the M-VAVE Tank-G v1 and v2
+# UltraRig for the M-VAVE Tank-G v1 and v2, Tank-B and Black Box
 
-UltraRig is an alternative firmware for the **M-VAVE Tank-G v1 and v2** guitar multi-effects pedals: NAM (Neural Amp Modeler) A2-Lite
+UltraRig is an alternative firmware for the **M-VAVE Tank-G v1 and v2**, **Tank-B**, and **Black Box** multi-effects pedals: NAM (Neural Amp Modeler) A2-Lite
 amp captures, an editable effects chain with parallel branches, cabinet IRs, 32 presets with 4 scenes each, a tuner, and a control page
 that runs in your browser, plus an optional Android app over Bluetooth. Out of the box the footswitches work like the factory firmware
 (8 banks of 4 presets, a Live mode for the effects and the knobs), or you can give each one your own actions.
@@ -25,9 +25,9 @@ Not sure which one you have? The installer tells you, and it refuses a package m
 
 ## Before you install
 
-- **Factory firmware 97 or 98.** On 96, 53 or older, update first with M-VAVE's M-UPGRADE from [m-vave.com/download](https://m-vave.com/download)
-  (it installs 98). That update puts the factory presets, amps and cabs back, so save your own with M-EFCS first. Newer than 98 is not
-  tested, and rebrands (Lekato, Playwell, Yuimer, NMD) haven't been tested either.
+- **Factory firmware 97 or 98 (and 99 on Tank-G v2).** On 96, 53 or older, update first with M-VAVE's M-UPGRADE from [m-vave.com/download](https://m-vave.com/download)
+  (it installs 98). That update puts the factory presets, amps and cabs back, so save your own with M-EFCS first. Newer than 99 is not
+  tested. For full device status and known rebrands (Ziron, Lekato, etc.), see [COMPATIBILITY.md](COMPATIBILITY.md).
 - Windows 10 or 11 to install, Chrome or Edge for the control page, and a USB **data** cable plugged straight into the computer (no hub).
 - The installer checks your pedal before writing anything and, if it isn't supported, stops without changing anything.
 
@@ -50,12 +50,12 @@ the factory firmware"). Copy it somewhere safe and **never share it**: it holds 
 
 Want to know first whether your pedal is supported? The [UltraRig Check](../../releases/tag/check1) only reads the pedal and never writes
 anything. Unzip it, read `README-CHECK.txt`, run `UltraRig-Check.exe` and, if you like, send the report file through a
-[Check report issue](../../issues/new?template=check-report.yml).
+[Check report issue](../../issues/new?template=check-report.yml). See [COMPATIBILITY.md](COMPATIBILITY.md) for details on rebrands and how check reports are used.
 
 ## Bugs and ideas
 
 Use "Send report to the developer…" on the control page, or [open an issue](../../issues) with the output of "Copy diagnostics".
-Pedal requests are welcome too.
+To request support for new pedals or hardware variations, open a [Pedal request](../../issues/new?template=pedal-request.yml).
 
 ## License
 

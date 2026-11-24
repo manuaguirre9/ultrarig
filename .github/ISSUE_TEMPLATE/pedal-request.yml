@@ -1,0 +1,52 @@
+name: Pedal / Device request
+description: Request support for a new pedal, rebrand, or hardware variation
+title: "Pedal request: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping expand UltraRig support to more hardware!
+        Please share details about the pedal or variation you'd like to see supported.
+  - type: input
+    id: pedal_name
+    attributes:
+      label: Pedal brand and model name
+      description: Exact name printed on the unit or packaging.
+      placeholder: "e.g. M-VAVE Tank Pro, MK-300, Cuvave Cube Baby, Kokko KMF-1, Valeton GP-50"
+    validations:
+      required: true
+  - type: input
+    id: oem_manufacturer
+    attributes:
+      label: Manufacturer / OEM parent (if known)
+      description: e.g. M-VAVE / Cuvave / Sinco, Lekato, Ziron, Valeton, Kokko
+      placeholder: "e.g. M-VAVE / Sinco"
+    validations:
+      required: false
+  - type: dropdown
+    id: check_status
+    attributes:
+      label: Have you tried running UltraRig-Check?
+      options:
+        - "Yes, and I attached the report in a Check Report issue"
+        - "Yes, but it did not recognize the pedal / gave an error"
+        - "No, I haven't run it yet"
+        - "No, I do not own the pedal yet"
+    validations:
+      required: true
+  - type: textarea
+    id: hardware_details
+    attributes:
+      label: Hardware specifications and layout
+      description: Footswitches, screen, knobs, audio inputs/outputs, USB port type, Bluetooth capabilities, etc.
+      placeholder: "Number of footswitches, screen type (color/mono/LCD), 1/4\" stereo outs, XLR, headphone jack, etc."
+    validations:
+      required: false
+  - type: textarea
+    id: links_and_references
+    attributes:
+      label: Links or documentation
+      description: Official website, firmware download links, teardowns, or photos of the board.
+    validations:
+      required: false
