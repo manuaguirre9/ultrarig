@@ -11,6 +11,9 @@ that runs in your browser, plus an optional Android app over Bluetooth. Out of t
 
 **Website and release news:** [ultrarig.app](https://ultrarig.app). Leave your email there to get a note when a new version is out.
 
+**Guides & Documentation:**
+- [Cabinet IR Specifications & Guide](docs/CABINET-IRS.md): 1024-point convolution specs, phase alignment, truncation, and acoustic/bass IR loading.
+
 ## Download
 
 Every version is in [Releases](../../releases/latest). Pick the file for your pedal:
