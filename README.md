@@ -57,6 +57,10 @@ anything. Unzip it, read `README-CHECK.txt`, run `UltraRig-Check.exe` and, if yo
 Use "Send report to the developer…" on the control page, or [open an issue](../../issues) with the output of "Copy diagnostics".
 Pedal requests are welcome too.
 
+## Guides & Documentation
+
+- [Mandolin Electroacoustic Dynamics & Chop Guide](docs/MANDOLIN-ELECTROACOUSTIC-ROUTING.md): F-Style vs A-Style body acoustics, rhythm chop transient limiting, 3.6 kHz piezo de-quack notching, and Lloyd Loar F-5 IR convolution.
+
 ## License
 
 UltraRig is free for **personal, non-commercial use** under the [PolyForm Noncommercial License 1.0.0](LICENSE.md): you may not sell the
