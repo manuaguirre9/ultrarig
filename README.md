@@ -11,6 +11,9 @@ that runs in your browser, plus an optional Android app over Bluetooth. Out of t
 
 **Website and release news:** [ultrarig.app](https://ultrarig.app). Leave your email there to get a note when a new version is out.
 
+**Guides & Documentation:**
+- [Bass Rig Optimization & Tone Guide](docs/BASS-RIG-GUIDE.md): Tank-B setup, parallel clean blend routing, compression, NAM bass captures, and cabinet IR selection.
+
 ## Download
 
 Every version is in [Releases](../../releases/latest). Pick the file for your pedal:
