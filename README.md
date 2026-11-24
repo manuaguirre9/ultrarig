@@ -57,6 +57,10 @@ anything. Unzip it, read `README-CHECK.txt`, run `UltraRig-Check.exe` and, if yo
 Use "Send report to the developer…" on the control page, or [open an issue](../../issues) with the output of "Copy diagnostics".
 Pedal requests are welcome too.
 
+## Guides & Documentation
+
+- [Rotary Leslie Speaker Modeling & Doppler Acoustics Guide](docs/ROTARY-SPEAKER-LESLIE-ROUTING.md): Leslie 122/147 horn & drum mechanical physics, asymmetrical inertia acceleration, Doppler pitch-shift, and stereo mic placement.
+
 ## License
 
 UltraRig is free for **personal, non-commercial use** under the [PolyForm Noncommercial License 1.0.0](LICENSE.md): you may not sell the
