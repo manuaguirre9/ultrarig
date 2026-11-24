@@ -55,7 +55,7 @@ anything. Unzip it, read `README-CHECK.txt`, run `UltraRig-Check.exe` and, if yo
 ## Bugs and ideas
 
 Use "Send report to the developer…" on the control page, or [open an issue](../../issues) with the output of "Copy diagnostics".
-Pedal requests are welcome too.
+Pedal requests are welcome too. Contributors can run `python scripts/lint_docs.py` to validate markdown documentation integrity before submitting PRs.
 
 ## License
 
