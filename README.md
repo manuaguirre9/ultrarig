@@ -57,6 +57,10 @@ anything. Unzip it, read `README-CHECK.txt`, run `UltraRig-Check.exe` and, if yo
 Use "Send report to the developer…" on the control page, or [open an issue](../../issues) with the output of "Copy diagnostics".
 Pedal requests are welcome too.
 
+## Guides & Documentation
+
+- [Baritone & Extreme Drop Tunings Optimization Guide](docs/BARITONE-DROP-TUNINGS.md): Pre-gain HPF tightening, mid-hump overdrive boosting, oversized 4x12 IR selection, and palm-mute chug definition for Drop C through Drop A.
+
 ## License
 
 UltraRig is free for **personal, non-commercial use** under the [PolyForm Noncommercial License 1.0.0](LICENSE.md): you may not sell the
