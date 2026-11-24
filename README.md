@@ -57,6 +57,10 @@ anything. Unzip it, read `README-CHECK.txt`, run `UltraRig-Check.exe` and, if yo
 Use "Send report to the developer…" on the control page, or [open an issue](../../issues) with the output of "Copy diagnostics".
 Pedal requests are welcome too.
 
+## Guides & Documentation
+
+- [Preset Loudness Matching & LUFS Calibration Guide](docs/PRESET-LOUDNESS-MATCHING.md): Equalizing perceived loudness across 32 presets, Fletcher-Munson stage compensation, crest factor management, and consistent solo boosts.
+
 ## License
 
 UltraRig is free for **personal, non-commercial use** under the [PolyForm Noncommercial License 1.0.0](LICENSE.md): you may not sell the
