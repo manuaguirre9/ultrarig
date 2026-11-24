@@ -57,6 +57,10 @@ anything. Unzip it, read `README-CHECK.txt`, run `UltraRig-Check.exe` and, if yo
 Use "Send report to the developer…" on the control page, or [open an issue](../../issues) with the output of "Copy diagnostics".
 Pedal requests are welcome too.
 
+## Guides & Documentation
+
+- [Soldano Super Lead Overdrive (SLO-100) Preamp & High-Gain Routing Guide](docs/SOLDANO-SLO100-ROUTING.md): Pre-distortion de-fuzzing filters, cascading 12AX7 cold-clipper architecture, 5881 power section Depth/Presence resonance, and modern liquid lead scenes.
+
 ## License
 
 UltraRig is free for **personal, non-commercial use** under the [PolyForm Noncommercial License 1.0.0](LICENSE.md): you may not sell the
