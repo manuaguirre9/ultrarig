@@ -57,6 +57,10 @@ anything. Unzip it, read `README-CHECK.txt`, run `UltraRig-Check.exe` and, if yo
 Use "Send report to the developer…" on the control page, or [open an issue](../../issues) with the output of "Copy diagnostics".
 Pedal requests are welcome too.
 
+## Guides & Documentation
+
+- [6-String Extended Range Bass (ERB) Dynamics Guide](docs/6-STRING-EXTENDED-BASS.md): Sub-B0/F#0 infrasonic headroom management, 3-zone multiband compression, polyphonic chord clarity, and woofer over-excursion protection.
+
 ## License
 
 UltraRig is free for **personal, non-commercial use** under the [PolyForm Noncommercial License 1.0.0](LICENSE.md): you may not sell the
