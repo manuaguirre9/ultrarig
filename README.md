@@ -11,6 +11,8 @@ that runs in your browser, plus an optional Android app over Bluetooth. Out of t
 
 **Website and release news:** [ultrarig.app](https://ultrarig.app). Leave your email there to get a note when a new version is out.
 
+**Community translations:** 🇧🇷 [Guia de Instalação e Segurança em Português](docs/INSTALL-PTBR.md).
+
 ## Download
 
 Every version is in [Releases](../../releases/latest). Pick the file for your pedal:
