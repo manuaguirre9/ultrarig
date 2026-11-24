@@ -57,6 +57,10 @@ anything. Unzip it, read `README-CHECK.txt`, run `UltraRig-Check.exe` and, if yo
 Use "Send report to the developer…" on the control page, or [open an issue](../../issues) with the output of "Copy diagnostics".
 Pedal requests are welcome too.
 
+## Guides & Documentation
+
+- [Upright Bass & Double Bass Acoustic Routing Guide](docs/UPRIGHT-BASS-ROUTING.md): High-impedance matching, subsonic HPF, Helmholtz cavity notch filtering, acoustic body IR convolution, and pizzicato vs. arco dynamic shaping.
+
 ## License
 
 UltraRig is free for **personal, non-commercial use** under the [PolyForm Noncommercial License 1.0.0](LICENSE.md): you may not sell the
