@@ -57,6 +57,10 @@ anything. Unzip it, read `README-CHECK.txt`, run `UltraRig-Check.exe` and, if yo
 Use "Send report to the developer…" on the control page, or [open an issue](../../issues) with the output of "Copy diagnostics".
 Pedal requests are welcome too.
 
+## Guides & Documentation
+
+- [Vocal Formant Filter & Virtual Talk-Box Guide](docs/FORMANT-FILTER-TALKBOX.md): Human vocal tract F1/F2 formant physics, Heil Talk Box virtual modeling, vowel morphing trajectories, and expression/envelope control.
+
 ## License
 
 UltraRig is free for **personal, non-commercial use** under the [PolyForm Noncommercial License 1.0.0](LICENSE.md): you may not sell the
