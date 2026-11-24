@@ -57,6 +57,10 @@ anything. Unzip it, read `README-CHECK.txt`, run `UltraRig-Check.exe` and, if yo
 Use "Send report to the developer…" on the control page, or [open an issue](../../issues) with the output of "Copy diagnostics".
 Pedal requests are welcome too.
 
+## Guides & Documentation
+
+- [Optical LA-2A Tube Compression & T4B Electro-Optics Guide](docs/OPTICAL-LA2A-COMPRESSION.md): Teletronix T4B optical cell physics, two-stage memory release dynamics, 12AX7 tube harmonics, and vocal-like velvet sustain.
+
 ## License
 
 UltraRig is free for **personal, non-commercial use** under the [PolyForm Noncommercial License 1.0.0](LICENSE.md): you may not sell the
