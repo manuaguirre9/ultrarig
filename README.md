@@ -57,6 +57,10 @@ anything. Unzip it, read `README-CHECK.txt`, run `UltraRig-Check.exe` and, if yo
 Use "Send report to the developer…" on the control page, or [open an issue](../../issues) with the output of "Copy diagnostics".
 Pedal requests are welcome too.
 
+## Guides & Documentation
+
+- [Touch Envelope Filter & Auto-Wah Dynamics Guide](docs/TOUCH-ENVELOPE-FILTER-ROUTING.md): State-variable filter physics, Up-Sweep vs Down-Sweep vocal modulations, Mu-Tron III sensitivity calibration, and peak resonance clipping prevention.
+
 ## License
 
 UltraRig is free for **personal, non-commercial use** under the [PolyForm Noncommercial License 1.0.0](LICENSE.md): you may not sell the
