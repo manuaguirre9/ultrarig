@@ -11,6 +11,9 @@ that runs in your browser, plus an optional Android app over Bluetooth. Out of t
 
 **Website and release news:** [ultrarig.app](https://ultrarig.app). Leave your email there to get a note when a new version is out.
 
+**Guides & Documentation:**
+- [Live Stage Connections & Amplifier Routing Guide](docs/AMP-ROUTING-METHODS.md): FX loop power amp in, front of amp, FRFR/PA setups, and cabinet IR on/off guidelines.
+
 ## Download
 
 Every version is in [Releases](../../releases/latest). Pick the file for your pedal:
