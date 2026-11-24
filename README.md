@@ -57,6 +57,10 @@ anything. Unzip it, read `README-CHECK.txt`, run `UltraRig-Check.exe` and, if yo
 Use "Send report to the developer…" on the control page, or [open an issue](../../issues) with the output of "Copy diagnostics".
 Pedal requests are welcome too.
 
+## Guides & Documentation
+
+- [5-String Banjo Dynamics & Tone Ring IR Guide](docs/5-STRING-BANJO-ROUTING.md): Mylar head acoustics, metal fingerpick transient limiting, 2.2 kHz skin resonance notching, and pre-war tone ring IR convolution.
+
 ## License
 
 UltraRig is free for **personal, non-commercial use** under the [PolyForm Noncommercial License 1.0.0](LICENSE.md): you may not sell the
