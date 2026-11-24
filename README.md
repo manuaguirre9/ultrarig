@@ -11,6 +11,9 @@ that runs in your browser, plus an optional Android app over Bluetooth. Out of t
 
 **Website and release news:** [ultrarig.app](https://ultrarig.app). Leave your email there to get a note when a new version is out.
 
+**Guides & Documentation:**
+- [Noise Gate Calibration & Sustain Optimization](docs/NOISE-GATE-TUNING.md): Eliminating single-coil hum and high-gain hiss without choking natural note sustain.
+
 ## Download
 
 Every version is in [Releases](../../releases/latest). Pick the file for your pedal:
