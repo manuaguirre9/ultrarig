@@ -57,6 +57,10 @@ anything. Unzip it, read `README-CHECK.txt`, run `UltraRig-Check.exe` and, if yo
 Use "Send report to the developer…" on the control page, or [open an issue](../../issues) with the output of "Copy diagnostics".
 Pedal requests are welcome too.
 
+## Guides & Documentation
+
+- [Viola Caipira (10-String) Electroacoustic Routing & Tone Guide](docs/VIOLA-CAIPIRA-10-STRING-ROUTING.md): Acoustic resonance management, double-course balance, transient control, body IR convolution, and performance scenes for Brazilian 10-string folk guitar.
+
 ## License
 
 UltraRig is free for **personal, non-commercial use** under the [PolyForm Noncommercial License 1.0.0](LICENSE.md): you may not sell the
