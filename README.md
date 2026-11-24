@@ -57,6 +57,10 @@ anything. Unzip it, read `README-CHECK.txt`, run `UltraRig-Check.exe` and, if yo
 Use "Send report to the developer…" on the control page, or [open an issue](../../issues) with the output of "Copy diagnostics".
 Pedal requests are welcome too.
 
+## Guides & Documentation
+
+- [Harp & World Ethnic Strings Routing Guide](docs/ETHNIC-STRINGS-ROUTING.md): Tailored HPF cutoffs, transient softening, acoustic body IR convolution, and modal spatialization for harp, koto, oud, sitar, and bouzouki.
+
 ## License
 
 UltraRig is free for **personal, non-commercial use** under the [PolyForm Noncommercial License 1.0.0](LICENSE.md): you may not sell the
