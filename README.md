@@ -57,6 +57,10 @@ anything. Unzip it, read `README-CHECK.txt`, run `UltraRig-Check.exe` and, if yo
 Use "Send report to the developer…" on the control page, or [open an issue](../../issues) with the output of "Copy diagnostics".
 Pedal requests are welcome too.
 
+## Guides & Documentation
+
+- [Ring Modulator Mathematics & Inharmonic Sideband Guide](docs/RING-MODULATOR-ROUTING.md): Diode bridge analog multiplication, sum and difference sideband generation, carrier suppression, sub-audio tremolo transition, and tuned metallic bells.
+
 ## License
 
 UltraRig is free for **personal, non-commercial use** under the [PolyForm Noncommercial License 1.0.0](LICENSE.md): you may not sell the
