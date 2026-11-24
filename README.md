@@ -57,6 +57,10 @@ anything. Unzip it, read `README-CHECK.txt`, run `UltraRig-Check.exe` and, if yo
 Use "Send report to the developer…" on the control page, or [open an issue](../../issues) with the output of "Copy diagnostics".
 Pedal requests are welcome too.
 
+## Guides & Documentation
+
+- [Uni-Vibe Optical Phasing & Lamp Non-Linearity Guide](docs/UNIVIBE-OPTICAL-PHASING.md): Shin-ei 1968 4-stage LDR electro-optics, incandescent bulb thermal inertia, asymmetrical lumpy throb, and Chorus vs Vibrato routing.
+
 ## License
 
 UltraRig is free for **personal, non-commercial use** under the [PolyForm Noncommercial License 1.0.0](LICENSE.md): you may not sell the
