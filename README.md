@@ -11,6 +11,9 @@ that runs in your browser, plus an optional Android app over Bluetooth. Out of t
 
 **Website and release news:** [ultrarig.app](https://ultrarig.app). Leave your email there to get a note when a new version is out.
 
+**Guides & Documentation:**
+- [Wireless Bluetooth MIDI Controllers Integration Guide](docs/WIRELESS-CONTROLLERS.md): Pairing M-VAVE Chocolate, Ampero Control, and Airstep for 8-button expansion and scene triggering.
+
 ## Download
 
 Every version is in [Releases](../../releases/latest). Pick the file for your pedal:
