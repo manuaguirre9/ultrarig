@@ -57,6 +57,10 @@ anything. Unzip it, read `README-CHECK.txt`, run `UltraRig-Check.exe` and, if yo
 Use "Send report to the developer…" on the control page, or [open an issue](../../issues) with the output of "Copy diagnostics".
 Pedal requests are welcome too.
 
+## Guides & Documentation
+
+- [Fender Tweed Bassman 5F6-A (1959 4x10 Tube Combo) Routing Guide](docs/FENDER-TWEED-BASSMAN-5F6A.md): Bright/Normal interactive channel jumping, cathode-follower midrange tonestack, 5AR4 rectifier sag, 4x10 Jensen P10R IRs, and classic blues/meltdown scenes.
+
 ## License
 
 UltraRig is free for **personal, non-commercial use** under the [PolyForm Noncommercial License 1.0.0](LICENSE.md): you may not sell the
