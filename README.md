@@ -57,6 +57,10 @@ anything. Unzip it, read `README-CHECK.txt`, run `UltraRig-Check.exe` and, if yo
 Use "Send report to the developer…" on the control page, or [open an issue](../../issues) with the output of "Copy diagnostics".
 Pedal requests are welcome too.
 
+## Guides & Documentation
+
+- [Guitarra Baiana (5-String) Electric Routing & Tone Guide](docs/GUITARRA-BAIANA-5-STRING-ROUTING.md): Short-scale treble taming, low C string tightness, singing mid-hump overdrive, optical phaser swirl, and Salvador carnival trio elétrico presets.
+
 ## License
 
 UltraRig is free for **personal, non-commercial use** under the [PolyForm Noncommercial License 1.0.0](LICENSE.md): you may not sell the
