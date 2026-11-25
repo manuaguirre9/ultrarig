@@ -57,6 +57,10 @@ anything. Unzip it, read `README-CHECK.txt`, run `UltraRig-Check.exe` and, if yo
 Use "Send report to the developer…" on the control page, or [open an issue](../../issues) with the output of "Copy diagnostics".
 Pedal requests are welcome too.
 
+## Guides & Documentation
+
+- [Vintage Tube Spring Reverb Tank (Fender 6G15) & Tape Echo Guide](docs/VINTAGE-SPRING-REVERB-TANK.md): Electromechanical coil dispersion ("drip"), 6K6GT driver tube Dwell saturation, pre-amp routing dynamics, and Echoplex tape echo integration.
+
 ## License
 
 UltraRig is free for **personal, non-commercial use** under the [PolyForm Noncommercial License 1.0.0](LICENSE.md): you may not sell the
