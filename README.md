@@ -57,6 +57,10 @@ anything. Unzip it, read `README-CHECK.txt`, run `UltraRig-Check.exe` and, if yo
 Use "Send report to the developer…" on the control page, or [open an issue](../../issues) with the output of "Copy diagnostics".
 Pedal requests are welcome too.
 
+## Guides & Documentation
+
+- [Mesa/Boogie Mark IIC+ & IV Preamp Routing & 5-Band EQ Guide](docs/MESA-MARK-IIC-ROUTING.md): Pre-distortion rotary tonestack dynamics, post-distortion 5-band V-Scoop graphic equalizer, Simul-Class hybrid 6L6/EL34 power section, and thrash/progressive lead scenes.
+
 ## License
 
 UltraRig is free for **personal, non-commercial use** under the [PolyForm Noncommercial License 1.0.0](LICENSE.md): you may not sell the
