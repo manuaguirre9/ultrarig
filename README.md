@@ -57,6 +57,10 @@ anything. Unzip it, read `README-CHECK.txt`, run `UltraRig-Check.exe` and, if yo
 Use "Send report to the developer…" on the control page, or [open an issue](../../issues) with the output of "Copy diagnostics".
 Pedal requests are welcome too.
 
+## Guides & Documentation
+
+- [12-String Craviola (Brazilian Acoustic Harpsichord-Guitar) Routing Guide](docs/CRAVIOLA-12-STRING-ROUTING.md): Asymmetric body resonance notch filtration, dual-band unison/octave pair balancing, Jacarandá Craviola IR convolution, and Paulinho Nogueira / MPB scenes.
+
 ## License
 
 UltraRig is free for **personal, non-commercial use** under the [PolyForm Noncommercial License 1.0.0](LICENSE.md): you may not sell the
