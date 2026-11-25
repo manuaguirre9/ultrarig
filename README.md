@@ -57,6 +57,10 @@ anything. Unzip it, read `README-CHECK.txt`, run `UltraRig-Check.exe` and, if yo
 Use "Send report to the developer…" on the control page, or [open an issue](../../issues) with the output of "Copy diagnostics".
 Pedal requests are welcome too.
 
+## Guides & Documentation
+
+- [B3 Organ Synthesizer & Independent Dual-Rotor (Leslie 122) Modeling Guide](docs/DUAL-ROTOR-ORGAN-SIMULATOR.md): Polyphonic drawbar tonewheel synthesis, Key Click & 2nd/3rd harmonic percussion, 6550 tube drive, and independent Horn/Drum rotor inertia.
+
 ## License
 
 UltraRig is free for **personal, non-commercial use** under the [PolyForm Noncommercial License 1.0.0](LICENSE.md): you may not sell the
