@@ -57,6 +57,10 @@ anything. Unzip it, read `README-CHECK.txt`, run `UltraRig-Check.exe` and, if yo
 Use "Send report to the developer…" on the control page, or [open an issue](../../issues) with the output of "Copy diagnostics".
 Pedal requests are welcome too.
 
+## Guides & Documentation
+
+- [Stereo Micro-Pitch Detuner (Eventide H3000 Style) Modeling Guide](docs/MICRO-PITCH-DETUNER-H3000.md): Static opposing ±9 cent pitch shifting, asymmetric Haas micro-delays (11 ms/19 ms) eliminating LFO warble, mono-safe low-end crossovers, and Van Halen W/D/W scenes.
+
 ## License
 
 UltraRig is free for **personal, non-commercial use** under the [PolyForm Noncommercial License 1.0.0](LICENSE.md): you may not sell the
