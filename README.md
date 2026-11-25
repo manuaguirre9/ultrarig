@@ -57,6 +57,10 @@ anything. Unzip it, read `README-CHECK.txt`, run `UltraRig-Check.exe` and, if yo
 Use "Send report to the developer…" on the control page, or [open an issue](../../issues) with the output of "Copy diagnostics".
 Pedal requests are welcome too.
 
+## Guides & Documentation
+
+- [5 & 6-String Fretless Bass ("Mwah" Vocal Accentuation) Routing Guide](docs/FRETLESS-MWAH-BASS-ROUTING.md): Fingerboard micro-grazing harmonic boost (850 Hz - 1.6 kHz), optical sustain shaping, 180 Hz mono-safe BBD chorus crossover, and Jaco/Pino/Manring scenes.
+
 ## License
 
 UltraRig is free for **personal, non-commercial use** under the [PolyForm Noncommercial License 1.0.0](LICENSE.md): you may not sell the
