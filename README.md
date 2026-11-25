@@ -57,6 +57,10 @@ anything. Unzip it, read `README-CHECK.txt`, run `UltraRig-Check.exe` and, if yo
 Use "Send report to the developer…" on the control page, or [open an issue](../../issues) with the output of "Copy diagnostics".
 Pedal requests are welcome too.
 
+## Guides & Documentation
+
+- [Stereo Comb Filter & Tuned Resonator Modeling Guide](docs/STEREO-COMB-FILTER-RESONATOR.md): Feedback comb filtering mathematics, fractional delay pitch tracking, Karplus-Strong physical modeling, and tuned metallic/wood resonance presets.
+
 ## License
 
 UltraRig is free for **personal, non-commercial use** under the [PolyForm Noncommercial License 1.0.0](LICENSE.md): you may not sell the
