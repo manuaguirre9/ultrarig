@@ -57,6 +57,10 @@ anything. Unzip it, read `README-CHECK.txt`, run `UltraRig-Check.exe` and, if yo
 Use "Send report to the developer…" on the control page, or [open an issue](../../issues) with the output of "Copy diagnostics".
 Pedal requests are welcome too.
 
+## Guides & Documentation
+
+- [Stereo Shimmer & Cascade Hall Reverb Modeling Guide](docs/SHIMMER-CASCADE-HALL-REVERB.md): Hadamard FDN diffusion matrices, in-loop regenerative +12/+7/-12 st pitch cascades, adaptive high-frequency damping, and Eno/Lanois infinite freeze presets.
+
 ## License
 
 UltraRig is free for **personal, non-commercial use** under the [PolyForm Noncommercial License 1.0.0](LICENSE.md): you may not sell the
