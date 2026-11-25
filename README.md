@@ -57,6 +57,10 @@ anything. Unzip it, read `README-CHECK.txt`, run `UltraRig-Check.exe` and, if yo
 Use "Send report to the developer…" on the control page, or [open an issue](../../issues) with the output of "Copy diagnostics".
 Pedal requests are welcome too.
 
+## Guides & Documentation
+
+- [Electroacoustic Harp (Concert, Celtic & Paraguayan) Routing Guide](docs/HARP-ELECTROACOUSTIC-ROUTING.md): 6.5-octave frequency balancing (32 Hz - 3.1 kHz), trapezoidal soundbox notch suppression, dual-band glissando dynamics, and Concert/Celtic/Arpa Paraguaya scenes.
+
 ## License
 
 UltraRig is free for **personal, non-commercial use** under the [PolyForm Noncommercial License 1.0.0](LICENSE.md): you may not sell the
