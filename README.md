@@ -57,6 +57,10 @@ anything. Unzip it, read `README-CHECK.txt`, run `UltraRig-Check.exe` and, if yo
 Use "Send report to the developer…" on the control page, or [open an issue](../../issues) with the output of "Copy diagnostics".
 Pedal requests are welcome too.
 
+## Guides & Documentation
+
+- [Bogner Ecstasy 101B 3-Channel High-Gain Routing Guide](docs/BOGNER-ECSTASY-101B-ROUTING.md): Green/Blue/Red channel architecture, Plexi & Structure gain switches, Excursion speaker damping, Class A/AB bias, and Vai/Cantrell presets.
+
 ## License
 
 UltraRig is free for **personal, non-commercial use** under the [PolyForm Noncommercial License 1.0.0](LICENSE.md): you may not sell the
