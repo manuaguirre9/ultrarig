@@ -57,6 +57,10 @@ anything. Unzip it, read `README-CHECK.txt`, run `UltraRig-Check.exe` and, if yo
 Use "Send report to the developer…" on the control page, or [open an issue](../../issues) with the output of "Copy diagnostics".
 Pedal requests are welcome too.
 
+## Guides & Documentation
+
+- [Power Amp Tube Saturation & Output Transformer Hysteresis Guide](docs/POWER-AMP-TRANSFORMER-SATURATION.md): Standalone power-stage modeling covering Class-A single-ended vs. Class-AB push-pull harmonics, 6V6/6L6/EL34/EL84/6550 curves, B-H transformer hysteresis, and 5AR4/5Y3 rectifier sag.
+
 ## License
 
 UltraRig is free for **personal, non-commercial use** under the [PolyForm Noncommercial License 1.0.0](LICENSE.md): you may not sell the
