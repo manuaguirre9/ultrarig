@@ -57,6 +57,10 @@ anything. Unzip it, read `README-CHECK.txt`, run `UltraRig-Check.exe` and, if yo
 Use "Send report to the developer…" on the control page, or [open an issue](../../issues) with the output of "Copy diagnostics".
 Pedal requests are welcome too.
 
+## Guides & Documentation
+
+- [Rhythmic Slicer & Tempo-Synced Step Sequencer Modeling Guide](docs/RHYTHMIC-SLICER-SEQUENCER.md): 16-step VCA gate matrix, anti-click slew smoothing, stepped resonant ladder VCF modulation, MIDI clock sync, and transient attack reset presets.
+
 ## License
 
 UltraRig is free for **personal, non-commercial use** under the [PolyForm Noncommercial License 1.0.0](LICENSE.md): you may not sell the
