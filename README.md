@@ -57,6 +57,10 @@ anything. Unzip it, read `README-CHECK.txt`, run `UltraRig-Check.exe` and, if yo
 Use "Send report to the developer…" on the control page, or [open an issue](../../issues) with the output of "Copy diagnostics".
 Pedal requests are welcome too.
 
+## Guides & Documentation
+
+- [Marshall JCM800 2203 & Hot-Rod Mod High-Gain Routing Guide](docs/MARSHALL-JCM800-2203-ROUTING.md): High vs. Low input V1B bypass, 1000 pF bright cap interaction, Boss SD-1 front-end boosting, Hot-Rod #39 extra stage, and 80s rock/thrash presets.
+
 ## License
 
 UltraRig is free for **personal, non-commercial use** under the [PolyForm Noncommercial License 1.0.0](LICENSE.md): you may not sell the
