@@ -57,6 +57,10 @@ anything. Unzip it, read `README-CHECK.txt`, run `UltraRig-Check.exe` and, if yo
 Use "Send report to the developer…" on the control page, or [open an issue](../../issues) with the output of "Copy diagnostics".
 Pedal requests are welcome too.
 
+## Guides & Documentation
+
+- [Stereo Reverse Delay & Transient-Synced Buffer Modeling Guide](docs/STEREO-REVERSE-DELAY.md): Dual-window Hann crossfading, transient-aligned buffer reversal, reverse +12 st crystal shimmer, and stereo ping-pong presets.
+
 ## License
 
 UltraRig is free for **personal, non-commercial use** under the [PolyForm Noncommercial License 1.0.0](LICENSE.md): you may not sell the
